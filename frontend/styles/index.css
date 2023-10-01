@@ -84,3 +84,8 @@ hr {
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
 }
+
+span.highlight {
+  background-color: #ffd500;
+  padding: 0.25rem;
+}
