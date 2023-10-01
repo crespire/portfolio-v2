@@ -94,7 +94,7 @@ body > nav a {
 }
 
 main {
-  min-width: 60vw;
+  flex: 1;
   background: white;
   border-radius: var(--border-radius);
   overflow: hidden scroll;
@@ -146,7 +146,7 @@ hr {
   text-align: center;
 }
 
-div.posts-grid {
+div.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -160,11 +160,11 @@ div.posts-grid {
   }
 }
 
-div.posts-grid > a {
+div.grid > a {
   text-decoration: none;
 }
 
-div.posts-grid .card {
+div.grid .post-card {
   border: 1px solid var(--primary-accent);
   border-radius: var(--border-radius);
   display: flex;
@@ -175,24 +175,24 @@ div.posts-grid .card {
   gap: 0.5rem;
 }
 
-div.posts-grid .card:hover {
+div.grid .post-card:hover {
   position: relative;
   top: -0.25rem;
   left: -0.25rem;
   box-shadow: var(--primary-accent) 0.25rem 0.25em;
 }
 
-div.posts-grid .card > h2, p {
+div.grid .post-card > h2, p {
   padding: 0;
   margin: 0;
 }
 
-div.posts-grid .card > span {
+div.grid .post-card > span {
   font-size: 0.75rem;
   color: var(--primary-accent);
 }
 
-div.posts-grid .card > p {
+div.grid .post-card > p {
   color: var(--primary-color);
 }
 

@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: default
 title: Posts
 paginate:
   collection: posts
 ---
 
-<div class="posts-grid">
+<div class="grid">
   <% paginator.resources.each do |post| %>
     <%= render PostCard.new(post) %>
   <% end %>
