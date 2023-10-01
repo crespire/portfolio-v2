@@ -4,7 +4,8 @@ title: Projects
 ---
 
 <% site.data.projects.each do |project| %>
-  <% next if project.skip %>
+  <% next if project.hidden %>
+
   <span><%= project.name %></span>
   <p><%= project.blurb %></p>
   <ul>

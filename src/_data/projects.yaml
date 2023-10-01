@@ -65,7 +65,7 @@
   tech:
     - Ruby
 - cards:
-  skip: true
+  hidden: true
   name: Memory cards
   img: cards.png
   live: https://memory-cards.crespire.dev/
