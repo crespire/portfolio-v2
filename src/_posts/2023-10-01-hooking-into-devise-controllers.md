@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Hooking in to Devise controller actions"
-date:   2023-10-01 09:52:27 -0400
+date:  2023-10-01 12:27
 description: 'A small intro to Devise action hooks.'
 categories: rails
 published: true
 ---
 
-<span class="highlight">Editor's note: this article was originally published to my [dev.to blog](https://dev.to/crespire/hooking-in-to-devise-controller-actions-3pk2) on Aug 17.</span>
+<span class="note">Editor's note: this article originally appeared on my [dev.to blog](https://dev.to/crespire/hooking-in-to-devise-controller-actions-3pk2).</span>
 
 Devise is a fantastic authentication gem in the Rails ecosystem that I'm learning more about every day!
 

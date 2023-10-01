@@ -2,6 +2,12 @@
 layout: default
 ---
 
-<h1><%= data.title %></h1>
 
-<%= yield %>
+<article>
+  <h1><%= data.title %></h1>
+  <p>Published <%= data.date.strftime("%F") %></p>
+  <hr>
+  <p>
+    <%= yield %>
+  </p>
+</article>

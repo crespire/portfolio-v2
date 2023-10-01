@@ -2,7 +2,11 @@
   --body-background: #f2f2f2;
   --body-color: #444;
   --heading-color: black;
-  --action-color: #d64045;
+  --action-color: #3F89BA;
+  --primary-color: black;
+  --primary-accent: #616161;
+  --secondary-color: #3F7FBF;
+  --border-radius: 0.25rem;
 }
 
 body {
@@ -12,23 +16,22 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
   margin: 0 8px;
-  font-size: 108%;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 a {
   color: var(--action-color);
   text-decoration: underline;
-  text-decoration-color: #ffb088;
+  text-decoration-color: var(--secondary-color);
 }
 
 h1 {
-  margin: 1rem 0 3rem;
-  text-align: center;
   font-weight: 900;
   font-size: 2.5rem;
   color: var(--heading-color);
   line-height: 1.2;
+  margin: 0;
 }
 
 body > header {
@@ -61,12 +64,10 @@ body > nav a {
 
 main {
   margin: 2rem auto 4rem;
-  max-width: 65rem;
-  min-height: calc(100vh - 200px);
+  max-width: 80ch;
   padding: 25px 25px 50px;
   background: white;
-  box-shadow: 2px 3px 3px #ddd;
-  border-radius: 3px;
+  border-radius: var(--border-radius);
 
   @media (max-width: 500px) {
     padding: 16px 16px 50px;
@@ -74,9 +75,25 @@ main {
 }
 
 footer {
-  text-align: center;
-  margin-bottom: 4rem;
-  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+footer > a {
+  transition: all 0.5s ease-out;
+}
+
+footer > a:hover {
+  transform: scale(1.25);
+}
+
+footer  svg, path {
+  stroke: var(--action-color);
+  color: var(--action-color);
 }
 
 hr {
@@ -85,7 +102,73 @@ hr {
   margin: 3rem 0;
 }
 
-span.highlight {
+.note {
+  display: block;
   background-color: #ffd500;
   padding: 0.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+div.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+div.posts-grid > a {
+  text-decoration: none;
+}
+
+div.posts-grid .card {
+  border: 1px solid var(--primary-accent);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+div.posts-grid .card:hover {
+  position: relative;
+  top: -0.25rem;
+  left: -0.25rem;
+  box-shadow: var(--primary-accent) 0.25rem 0.25em;
+}
+
+div.posts-grid .card > h2, p {
+  padding: 0;
+  margin: 0;
+}
+
+div.posts-grid .card > span {
+  font-size: 0.75rem;
+  color: var(--primary-accent);
+}
+
+div.posts-grid .card > p {
+  color: var(--primary-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+article {
+  padding: 0.25rem;
+}
+
+article > h1 {
+  margin: 0;
+  text-align: left;
+}
+
+article > hr {
+  margin: 1rem 0;
 }

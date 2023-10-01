@@ -1,6 +1,7 @@
 <a href="<%= @post.relative_url %>">
-  <div>
-    <h1><%= @post.data.title %></h1>
+  <div class="card">
+    <span>Published <%= @post.data.date.strftime("%F") %></span>
+    <h2><%= @post.data.title %></h2>
     <p><%= @post.data.description %></p>
   </div>
 </a>
