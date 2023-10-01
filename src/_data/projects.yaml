@@ -1,0 +1,84 @@
+---
+- ezn:
+  name: EZ Newswire
+  img: ezn.png
+  live: https://app.eznewswire.com/
+  repo: null
+  blurb: A press release generator and publishing network for small businesses.
+  tech:
+    - Ruby on Rails
+    - Turbo/Stimulus
+    - Bootstrap
+    - RSpec
+    - ViewComponents
+- railsbook:
+  name: Railsbook
+  img: railsbook.png
+  live: https://railsbook.crespire.dev/
+  repo: https://github.com/crespire/rails_railsbook
+  blurb: A monolithic Facebook clone using Rails 7 and Hotwire
+  tech:
+    - Ruby on Rails
+    - Turbo/Stimulus
+    - Sass CSS
+    - RSpec
+- buysell:
+  name: Buy & Sell
+  img: buysell.png
+  live: https://buysell.crespire.dev/
+  repo: https://github.com/buysell
+  blurb: A toy marketplace application powered by a Typescript React frontend and Rails 7 API
+  tech:
+    - Ruby on Rails
+    - Typescript
+    - React
+    - TailwindCSS
+    - DaisyUI
+    - ReactQuery
+    - RSpec
+    - Cypress
+- waldo:
+  name: Where's Waldo?
+  img: waldo.png
+  live: https://waldo.crespire.dev/
+  repo: https://github.com/crespire/waldo
+  blurb: A fullstack clicker game based on the classic children's books powered by a React frontend with a Rails API
+  tech:
+    - Ruby on Rails
+    - React
+    - TailwindCSS
+- shop:
+  name: 'Cozy Creature Canteen'
+  img: shop.png
+  live: https://pet-shop.crespire.dev/
+  repo: https://github.com/crespire/js-shopping-cart
+  blurb: A frontend storefront application with multi-step checkout flow written in React
+  tech:
+    - React
+    - TailwindCSS
+- chess:
+  name: Ruby chess
+  img: chess.png
+  live: https://replit.com/@crespire/rubychess?lite=1&outputonly=1#README
+  repo: https://github.com/crespire/ruby_chess
+  blurb: A two player command line Chess game implemented in Ruby
+  tech:
+    - Ruby
+- cards:
+  skip: true
+  name: Memory cards
+  img: cards.png
+  live: https://memory-cards.crespire.dev/
+  repo: https://github.com/crespire/js-memory-cards
+  blurb: A memory card game written in React
+  tech:
+    - React
+- battleship:
+  name: Battleship!
+  img: battleship.png
+  live: https://crespire.github.io/js-battleship/
+  repo: https://github.com/crespire/js-battleship
+  blurb: 'The classic game Battleship played in the browser against a (dumb) computer'
+  tech:
+    - ES6 Javasscript
+    - Jest
