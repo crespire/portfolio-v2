@@ -2,15 +2,6 @@
 layout: page
 title: Projects
 ---
-
-<% site.data.projects.each do |project| %>
-  <% next if project.hidden %>
-
-  <span><%= project.name %></span>
-  <p><%= project.blurb %></p>
-  <ul>
-    <% project.tech.each do |entry| %>
-      <li><%= entry %></li>
-    <% end %>
-  </ul>
+<% collections.projects.resources.each do |project| %>
+  <a href="<%= project.relative_url %>"><%= project.data.title %></a>
 <% end %>

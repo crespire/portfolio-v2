@@ -15,9 +15,13 @@ body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
-  margin: 0 8px;
   font-size: 16px;
   line-height: 1.5;
+  display: flex;
+  overflow: hidden;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 a {
@@ -34,19 +38,36 @@ h1 {
   margin: 0;
 }
 
+body > header, main {
+  padding: 0.75rem;
+  height: 70vh;
+  max-height: 70vh;
+  margin: 15vh auto;
+}
+
 body > header {
-  margin: 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    flex-direction: row;
+    height: fit-content;
+    max-height: 5rem;
+    margin: 0;
+  }
 }
 
-body > header img {
-  display: inline-block;
-  width: 400px;
-  max-width: 100%;
+body > header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
 }
 
-body > header > nav ul {
-  margin: 2rem 0;
+body > header nav ul {
+  margin: 0.5rem 0;
   padding: 0;
   list-style: none;
   list-style-type: none;
@@ -58,19 +79,31 @@ body > header > nav ul {
   font-weight: bold;
 }
 
+
+body > header img {
+  display: inline-block;
+  width: 5rem;
+  max-width: 5rem;
+  height: 5rem;
+  max-height: 5rem;
+}
+
+
 body > nav a {
   text-decoration: none;
 }
 
 main {
-  margin: 2rem auto 4rem;
-  max-width: 80ch;
-  padding: 25px 25px 50px;
+  min-width: 60vw;
   background: white;
   border-radius: var(--border-radius);
+  overflow: hidden scroll;
 
   @media (max-width: 500px) {
-    padding: 16px 16px 50px;
+    margin: 0;
+    height: auto;
+    max-height: 85vh;
+    max-width: 100%;
   }
 }
 
@@ -79,8 +112,11 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
   font-size: 1rem;
+
+  @media (max-width: 500px) {
+    justify-content: flex-end;
+  }
 }
 
 footer > a {
@@ -114,6 +150,14 @@ div.posts-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 div.posts-grid > a {

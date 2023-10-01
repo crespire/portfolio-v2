@@ -32,3 +32,9 @@ template_engine: erb
 timezone: America/Toronto
 pagination:
   enabled: true
+
+collections:
+  projects:
+    output: true
+    permalink: simple
+    sort_by: order
