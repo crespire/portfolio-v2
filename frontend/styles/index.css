@@ -42,12 +42,14 @@ body > header img {
   max-width: 100%;
 }
 
-body > nav ul {
+body > header > nav ul {
   margin: 2rem 0;
   padding: 0;
+  list-style: none;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
