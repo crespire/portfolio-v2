@@ -30,12 +30,15 @@ a {
   text-decoration-color: var(--secondary-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 h1 {
   font-weight: 900;
   font-size: 2.5rem;
   color: var(--heading-color);
   line-height: 1.2;
-  margin: 0;
 }
 
 body > header, main {
@@ -62,8 +65,14 @@ body > header {
 body > header div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: space-between;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1;
+
+  @media (max-width: 500px) {
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
 body > header nav ul {
@@ -72,11 +81,18 @@ body > header nav ul {
   list-style: none;
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (max-width: 500px) {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 
@@ -95,7 +111,6 @@ body > nav a {
 
 main {
   flex: 1;
-  background: white;
   border-radius: var(--border-radius);
   overflow: hidden scroll;
 
@@ -134,8 +149,8 @@ footer  svg, path {
 
 hr {
   border: none;
-  border-top: 2px dotted #bbb;
-  margin: 3rem 0;
+  border-top: 1px dotted var(--primary-accent);
+  margin: 1rem 0;
 }
 
 .note {
@@ -164,7 +179,7 @@ div.grid > a {
   text-decoration: none;
 }
 
-div.grid .post-card {
+div.grid .card {
   border: 1px solid var(--primary-accent);
   border-radius: var(--border-radius);
   display: flex;
@@ -175,24 +190,24 @@ div.grid .post-card {
   gap: 0.5rem;
 }
 
-div.grid .post-card:hover {
+div.grid .card:hover {
   position: relative;
   top: -0.25rem;
   left: -0.25rem;
   box-shadow: var(--primary-accent) 0.25rem 0.25em;
 }
 
-div.grid .post-card > h2, p {
+div.grid .card.post > h2, p {
   padding: 0;
   margin: 0;
 }
 
-div.grid .post-card > span {
+div.grid .card.post > span {
   font-size: 0.75rem;
   color: var(--primary-accent);
 }
 
-div.grid .post-card > p {
+div.grid .card.post > p {
   color: var(--primary-color);
 }
 
