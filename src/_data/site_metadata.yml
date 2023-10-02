@@ -4,7 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Simmon Li's Portfolio
+title: Simmon Li
 tagline: Your next mid-level Ruby developer!
 email: hello@crespire.dev
 description: >-

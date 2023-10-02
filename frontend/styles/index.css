@@ -111,7 +111,7 @@ body > nav a {
 
 main {
   flex: 1;
-  border-radius: var(--border-radius);
+  border-left: 1px dotted var(--primary-accent);
   overflow: hidden scroll;
 
   @media (max-width: 500px) {
