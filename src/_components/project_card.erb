@@ -1,8 +1,8 @@
 <div class="card project">
-  <h2><%= @project.data.title %></h2>
-  <p><%= @project.data.description %></p>
+  <h2><%= project.data.title %></h2>
+  <p><%= project.data.description %></p>
   <ul>
-    <% @project.data.tech.each do |item| %>
+    <% project.data.tech&.each do |item| %>
       <li><%= item %></li>
     <% end %>
   </ul>
