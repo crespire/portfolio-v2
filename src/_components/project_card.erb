@@ -1,5 +1,9 @@
-<a href="<%= @project.relative_url %>">
-  <div class="card project">
-    <h2><%= @project.data.title %></h2>
-  </div>
-</a>
+<div class="card project">
+  <h2><%= @project.data.title %></h2>
+  <p><%= @project.data.description %></p>
+  <ul>
+    <% @project.data.technologies&.each do |item| %>
+      <li><%= item %></li>
+    <% end %>
+  </ul>
+</div>

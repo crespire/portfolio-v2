@@ -38,3 +38,4 @@ collections:
     output: true
     permalink: simple
     sort_by: order
+    sort_direction: ascending
