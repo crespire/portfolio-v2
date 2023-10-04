@@ -3,7 +3,7 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="<%= data.layout %> <%= data.title %>">
+  <body class="<%= data.layout %> <%= data.title %>" data-controller="highlight" data-highlight-animate-class="highlight" data-highlight-animation-seconds-value="1">
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
 
     <main>

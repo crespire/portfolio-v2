@@ -11,7 +11,7 @@ title: "Simmon Li's Resume"
 
 Self-taught and tenacious, I'm a mid-level fullstack developer looking for an opportunity to grow with a team and continue to build on my skills. I'm fluent in Ruby/Rails, Hotwire, and Javascript. I've tinkered with Typescript, React and Go in my spare time and always open to learning new things.  
 &nbsp;  
-I'd love to chat about what I can bring to the table, so [get in touch with me](#contact-me).
+I'd love to chat about what I can bring to the table, so <a href="#contact-me" data-action="highlight#animate">contact me!</a>.
 
 ---
 

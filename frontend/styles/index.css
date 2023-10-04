@@ -139,7 +139,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-size: 1rem;
+  padding: 0.25rem;
 
   @media (max-width: 500px) {
     justify-content: flex-end;
@@ -148,6 +148,8 @@ footer {
 
 footer > a {
   transition: all 0.5s ease-out;
+  text-decoration: none;
+  height: 1.5rem;
 }
 
 footer > a:hover {
@@ -303,4 +305,20 @@ div.tag {
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
+}
+
+/* Highlight CSS Animation */
+.highlight {
+  animation: highlight 1s;
+}
+
+
+@keyframes highlight {
+  0% {
+    background-color: #FCF816;
+  }
+
+  100% {
+    background-color: inherit;
+  }
 }
