@@ -1,12 +1,12 @@
-<div class="card project">
+<a class="card project" href="<%= project.relative_url %>">
   <div>
     <h2><%= project.data.title %></h2>
     <small><%= project.data.role %></small>
   </div>
   <p><%= project.data.description %></p>
   <ul>
-    <% project.data.tech&.each do |item| %>
+    <% project.data.tech.each do |item| %>
       <li><%= item %></li>
     <% end %>
   </ul>
-</div>
+</a>

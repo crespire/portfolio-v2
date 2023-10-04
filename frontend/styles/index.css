@@ -43,9 +43,9 @@ h1 {
 
 body > header, main {
   padding: 0.75rem;
-  height: 70vh;
-  max-height: 70vh;
-  margin: 15vh auto;
+  height: 80vh;
+  max-height: 80vh;
+  margin: 10vh auto;
 }
 
 body > header {
@@ -119,6 +119,18 @@ main {
     height: auto;
     max-height: 85vh;
     max-width: 100%;
+    border-left: 0;
+    border-top: 1px dotted var(--primary-accent);
+  }
+}
+
+.default.Projects main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    align-items: flex-start;
   }
 }
 
@@ -166,12 +178,13 @@ div.grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 650px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -221,6 +234,7 @@ div.grid .card.post > p {
 div.grid .card.project {
   justify-content: flex-start;
   align-items: flex-start;
+  color: var(--primary-color);
 }
 
 div.grid .card.project > div > h2 {
@@ -239,6 +253,7 @@ div.grid .card.project > ul {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3;
   list-style-position: inside;
+  font-size: 0.9rem;
 
 }
 .pagination {
