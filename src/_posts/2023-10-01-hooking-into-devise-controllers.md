@@ -3,7 +3,10 @@ layout: post
 title:  "Hooking in to Devise controller actions"
 date:  2023-10-01 12:27
 description: 'A small intro to Devise action hooks.'
-categories: rails
+category: development
+tags:
+  - rails
+  - devise
 published: true
 ---
 

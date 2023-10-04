@@ -4,8 +4,15 @@ layout: default
 
 
 <article>
-  <h1><%= data.title %></h1>
-  <p>Published <%= data.date.strftime("%F") %></p>
+  <header>
+    <h1><%= data.title %></h1>
+    <div>
+      <% data.tags.each do |tag| %>
+        <div class='tag'>#<%= tag %></div>
+      <% end %>
+    </div>
+    <p>Published <%= data.date.strftime("%F") %></p>
+  </header>
   <hr>
   <p>
     <%= yield %>

@@ -31,7 +31,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0.5rem 0rem;
 }
 
 h1 {
@@ -197,9 +197,15 @@ div.grid .card:hover {
   box-shadow: var(--primary-accent) 0.25rem 0.25em;
 }
 
-div.grid .card.post > h2, p {
+/* Post Card Styles */
+div.grid .card.post > h2 {
   padding: 0;
   margin: 0;
+}
+
+div.grid .card.post > p {
+  padding: 0;
+  margin: 0.25rem 0rem;
 }
 
 div.grid .card.post > span {
@@ -211,6 +217,30 @@ div.grid .card.post > p {
   color: var(--primary-color);
 }
 
+/* Project Card Styles */
+div.grid .card.project {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+div.grid .card.project > div > h2 {
+  margin-bottom: 0;
+}
+
+div.grid .card.project > p {
+  flex: 1;
+}
+
+div.grid .card.project > ul {
+  width: 100%;
+  padding-left: 0.5rem;
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3;
+  list-style-position: inside;
+
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -228,6 +258,29 @@ article > h1 {
   text-align: left;
 }
 
+article > header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 article > hr {
   margin: 1rem 0;
+}
+
+article > header > div {
+  display: flex;
+  gap: .5rem;
+}
+
+div.tag {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: #FFF;
+  min-width: 1rem;
+  max-width: fit-content;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
 }
