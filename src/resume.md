@@ -4,14 +4,14 @@ title: "Simmon Li's Resume"
 ---
 # Simmon Li
 ## Resume
-* [hello@crespire.dev](mailto:hello@crespire.dev)
+* Email: [hello@crespire.dev](mailto:hello@crespire.dev)
 * Located in Toronto, Ontario, Canada
-* [![Github](https://img.shields.io/badge/-Simmon_Li-000?style=flat-square&logo=github&logoColor=azure&color=181717)](https://github.com/crespire)
-* [![Linkedin](https://img.shields.io/badge/-Simmon_Li-000?style=flat-square&logo=linkedin&logoColor=azure&color=0A66C2)](https://www.linkedin.com/in/simmonli/)
+* [![Github](https://img.shields.io/badge/-crespire-000?style=flat-square&logo=github&logoColor=azure&color=181717)](https://github.com/crespire)
+* [![LinkedIn](https://img.shields.io/badge/-Simmon_Li-000?style=flat-square&logo=linkedin&logoColor=azure&color=0A66C2)](https://www.linkedin.com/in/simmonli/)
 
 Self-taught and tenacious, I'm a mid-level fullstack developer looking for an opportunity to grow with a team and continue to build on my skills. I'm fluent in Ruby/Rails, Hotwire, and Javascript. I've tinkered with Typescript, React and Go in my spare time and always open to learning new things.  
 &nbsp;  
-I'd love to chat about what I can bring to the table, so <a href="#contact-me" data-action="highlight#animate">contact me!</a>.
+<span class="no-print">I'd love to chat about what I can bring to the table, so <a href="#contact-me" data-action="highlight#animate">contact me!</a>.</span>
 
 ---
 

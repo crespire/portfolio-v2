@@ -23,7 +23,3 @@ Supported delivery of usability improvements related to jQuery Datatables in con
 ### [Individual Contributor, Volunteer &middot; The Odin Project](/projects/odin)
 **October 2021 - present**  
 Contributed improvements and new lessons to the curriculum, including lessons on setting up a local development environment as well as guidance on Git best practices and support tooling. Delivered bug fixes on the web application and community management bot.
-  
-  
-[A full resume is available here.](/resume)
-
