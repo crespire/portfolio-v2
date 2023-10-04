@@ -86,7 +86,7 @@ body > header nav ul {
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,8 +108,7 @@ body > header img {
   max-height: 5rem;
 }
 
-
-body > nav a {
+body > nav ul a {
   text-decoration: none;
 }
 
@@ -132,16 +131,6 @@ main {
     border: 0;
     height: auto;
     max-height: fit-content;
-  }
-}
-
-.default.Projects main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 500px) {
-    align-items: flex-start;
   }
 }
 
@@ -190,7 +179,6 @@ div.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-
 
   @media (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
