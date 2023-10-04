@@ -288,6 +288,11 @@ article > header > div {
   gap: .5rem;
 }
 
+article > footer {
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
 div.tag {
   display: flex;
   justify-content: center;
