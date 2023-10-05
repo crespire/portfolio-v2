@@ -15,23 +15,33 @@ Self-taught and tenacious, I'm a mid-level fullstack developer looking for an op
 
 ---
 
-## Selected Projects
-### EZ Newswire
-_Ruby on Rails, PostgreSQL, ViewComponents, Hotwire, Devise, Bootstrap_  
-**Live:** [https://app.eznewswire.com/](https://app.eznewswire.com)  
-* Delivered numerous new features from user stories and Figma design mocks, working across the stack as needed
-* Implemented an organization/brand feature to manage multiple sets of press releases, benefiting agency users with multiple clients and/or brands
-* Created an image upload feature using Turbo/Stimulus, enabling users to upload and (re)order accompanying images with their press release without full page loads, improving customer conversions
-* Vendored an open source Javascript package to support image uploading with new required functionality, pending upstreaming
+## Work Experience
+### Sierra Rails, _Software Developer_
+March 2023 - present  
 * Executed architectural changes with the tech lead, significantly reducing error rates (approximately 60%)
-* Improved frontend reliability by switching from importmaps to esbuild-based Javascript packaging, further reducing failure rates due to data inconsistency and improving user experience
-* Developed and implemented a user onboarding experience, helping user retention and improving data reliability
-* Implemented, integrated, and tested a new checkout flow, supporting business goals to expand the publisher network and add additional payment processors, expanding reach
-* Enhanced the backend with more data models to capture additional checkout and payment data for analytics purposes
-* Crafted rake tasks and data migrations to ensure data integrity and consistency
-* Built a comprehensive MiniTest test suite, later converted to RSpec, achieving ~87% code coverage
+* Built a comprehensive RSpec suite, achieving ~92% code coverage
+* Led development of a new checkout flow improving the app across the stack to support business goals, open the architecture for additional payment processors, and enable more checkout and payment data capture for analytics
+* Re-engineered search to leverage a microservice and set up deployment environments to support search service
+* Improved application reliability by switching asset bundling to support more browsers, improving user experience and reducing error rates due to data inconsistency
+* Built new features using Ruby on Rails, PostgreSQL, ViewComponents, Hotwire, Devise, Bootstrap, Rspec and Capybara
+* Delivered numerous new features from user stories and Figma design mocks while working across the stack as needed
+* Implemented new organization/brand workflow to manage sets of press releases, benefiting agency users with multiple clients and/or brands
+* Created an image upload feature and workflow using Turbo/Stimulus, enabling users to upload and (re)order accompanying images with their press release without full page loads, improving customer conversions
+* Spearheaded development of a new user onboarding experience, improving data reliability
+* Worked in concert with the tech lead to re-implement our AI generation approach to support future growth and flexibility
+* Vendored an open source Javascript package to support image uploading with new required functionality
+* Crafted data migrations to ensure data integrity and consistency
+* Maintained and updated documentation for the application
 
-### CASA Volunteer Tracking
+### Designstor, _Office & Operations Manager_
+* Business operations, including accounts payable/receivable, taxes & finance
+* Built automated reporting tooling in Ruby and expanded tool to an internal report generation tool to facilitate billing and client audit requests
+* Alongside internal effort tracking automation, implemented financial reporting automation which helped to improve operational visibility for the executive team
+* Automated various project management workflow tasks to improve time-to-invoice
+* Various tasks including payroll, benefits & HR administration
+
+## Volunteer Experience
+### Ruby for Good - CASA, _Individual Contributor_
 _Ruby on Rails, PostgreSQL, ViewComponents, jQuery, Devise, Pundit_  
 **Live:** [https://casavolunteertracking.org/](https://casavolunteertracking.org/)  
 
@@ -39,6 +49,13 @@ _Ruby on Rails, PostgreSQL, ViewComponents, jQuery, Devise, Pundit_
 * Reviewed and improved multi-tenant permissions using Pundit to ensure security between tenants
 * Encapsulated application jobs into unit-testable plain old Ruby objects and wrote tests, adding confidence in notifications
 
+
+### The Odin Project, _Individual Contributor_
+Stuff
+
+---
+
+## Personal Projects
 ### Railsbook
 _Ruby on Rails, devise, Turbo/Stimulus, Sass CSS, RSpec, dokku, docker, AWS S3_  
 **Live:** [https://railsbook.crespire.dev](https://railsbook.crespire.dev/)  
@@ -56,54 +73,8 @@ _Ruby on Rails, React, Typescript, Tailwind, PostgreSQL, Rspec, cypress, git, do
 * Custom hooks and providers on the React application centralize important application functions, including API access and data caching and user authentication
 * Styled using daisyUI built on Tailwind, with some custom components created for re-usability.
 
-### Where's Waldo?
-_React, react router, Rails, Tailwind, webpack, npm, git, vercel, dokku, docker_  
-**Live:** [https://waldo.crespire.dev/](https://waldo.crespire.dev/)  
-**Repository:** [https://github.com/crespire/waldo](https://github.com/crespire/waldo)  
-* Implements a fullstack clicker game with a React client and custom Rails API
-* Uses react router for simple client routing
-* Powered by a data-backed canvas for real time input feedback
-* Styled with Tailwind, including custom animations
-* Monorepo deployed via vercel and dokku/docker
-
-### Rails Report Builder
-_Ruby, Rails, Hotwire Stimulus, RESTful API, git, docker, docker compose_  
-**Live:** Preview available upon request.
-**Repository:** [https://github.com/crespire/report_generation](https://github.com/crespire/report_generation)
-* An extension of the CLI Custom Report Automation Tool, this moves the application to a Rails app for ease of use with a GUI.
-* Utilizes an external API to generate requested reports
-* Relies on custom fork of WickedPDF gem to ensure temp file cleanup
-* Containerized application for easy deployment and portability with docker compose
-
-### Firebase Authorization Flow Sample
-_React, Typescript, MaterialUI, React Router, Firebase Auth & Storage, webpack, npm, git, vercel_  
-**Repository:** [https://github.com/crespire/ts-auth-sample](https://github.com/crespire/ts-auth-sample)  
-* Implements a front end Typescript React application utilizing MaterialUI components
-* Leverages Firebase for authentication and storage of user avatars
-* Simple React router set up
-* Relies on a custom authorization provider component as well as custom hook
-
-### Portfolio v1
-_React, Typescript, Tailwind, webpack, npm, git, vercel_  
-**Live:** [https://crespire.dev/](https://crespire.dev/)  
-**Repository:** [https://github.com/crespire/portfolio-v1](https://github.com/crespire/portfolio-v1)  
-* Implements a front end portfolio application with Typescript React
-* Utilizes advanced Tailwind techniques for interactive experience
-* Live via vercel
-
-### Cozy Creature Canteen
-_React, react router, Tailwind, webpack, npm, git, vercel_  
-**Live:** [https://pet-shop.crespire.dev/](https://pet-shop.crespire.dev/)  
-**Repository:** [https://github.com/crespire/js-shopping-cart](https://github.com/crespire/js-shopping-cart)  
-* Implements a frontend e-Commerce store front application in ReactJS
-* Deploys react router for simple two page navigation
-* Tracks a user's cart items and checkout information
-* Employs a multi-step checkout flow with custom form hook for input validation
-* Styled with Tailwind
-* Deployed via vercel
-
-### Chess
-_Ruby, RSpec, git_  
+### 2 Player CLI Chess
+_Ruby, RSpec_  
 **Live:** [https://replit.com/@crespire/rubychess](https://replit.com/@crespire/rubychess?lite=1&outputonly=1#README.md)  
 **Repository:** [https://github.com/crespire/ruby_chess](https://github.com/crespire/ruby_chess)
 * Implements Chess for 2 players via command line interface in Ruby
@@ -111,39 +82,6 @@ _Ruby, RSpec, git_
 * Automated RSpec test suite with ~96% coverage
 * Program does not utilize any third party Chess libraries
 * Wide compatibility with other Chess software via FEN (de)serialization
-
-### Memory Card Game
-_Javascript, ReactJS, Tailwind, webpack, npm, git, Github Pages_  
-**Live:** [https://memory-cards.crespire.dev/](https://memory-cards.crespire.dev/)  
-**Repository:** [https://github.com/crespire/js-memory-cards](https://github.com/crespire/js-memory-cards)  
-* Implements a simple memory card game in ReactJS function components using hooks
-* Leverages [https://www.deckofcardsapi.com/](https://www.deckofcardsapi.com/) to draw a set of 12 random cards
-* Keeps track of current and best scores using React hooks
-* Utilizes Tailwind styling
-
-### Battleship
-_Javascript, Jest, webpack, npm, git, Github Pages_  
-**Live:** [https://crespire.github.io/js-battleship/](https://crespire.github.io/js-battleship/)  
-**Repository:** [https://github.com/crespire/js-battleship](https://github.com/crespire/js-battleship)
-* Implements a simple Battleship game on the front end in Javascript
-* Designed to utilize factory functions to build domain objects
-* Automated Jest test suite with ~95% coverage
-
-### CV Builder
-_Javascript, ReactJS, Tailwind, webpack, npm, git, Github Pages_  
-**Live:** [https://crespire.github.io/js-cv-builder/](https://crespire.github.io/js-cv-builder/)  
-**Repository:** [https://github.com/crespire/js-cv-builder](https://github.com/crespire/js-cv-builder)
-* Implements a simple CV builder in ReactJS class components.
-* Allows adding, editing and deleting of nested list items in their respective sections.
-* Utilizes TailwindCSS for styling components
-
-### CLI Custom Report Automation Tool
-_Ruby, APIs, git_  
-**Repository:** [https://github.com/crespire/report_automation](https://github.com/crespire/report_automation)
-* Implements a command line application that ingests provided data and generates reporting
-* Utilizes API and JSON data
-* Relies on third party libraries for output generation
-* Optional GUI powered by LibUI and Glimmer DSL for LibUI on Linux systems
 
 ---
 
