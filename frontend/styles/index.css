@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   display: flex;
-  overflow: hidden;
+
   @media (max-width: 1000px) {
     flex-direction: column;
   }
@@ -124,6 +124,7 @@ main {
     max-width: 100%;
     border-left: 0;
     border-top: 1px dotted var(--primary-accent);
+    overflow: scroll;
   }
 
   @media print {
