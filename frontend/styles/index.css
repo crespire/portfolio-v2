@@ -19,7 +19,7 @@ body {
   line-height: 1.5;
   display: flex;
   overflow: hidden;
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 }
@@ -54,7 +54,7 @@ body > header {
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     flex-direction: row;
     height: fit-content;
     max-height: 5rem;
@@ -73,7 +73,7 @@ body > header div {
   align-items: center;
   flex: 1 1;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     justify-content: center;
     align-items: flex-end;
   }
@@ -92,7 +92,7 @@ body > header nav ul {
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -117,7 +117,7 @@ main {
   border-left: 1px dotted var(--primary-accent);
   overflow: hidden scroll;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     margin: 0;
     height: auto;
     max-height: fit-content;
@@ -141,7 +141,7 @@ footer {
   gap: 1rem;
   padding: 0.25rem;
 
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     justify-content: flex-end;
   }
 }
@@ -180,11 +180,7 @@ div.grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 650px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 1fr;
   }
 }
