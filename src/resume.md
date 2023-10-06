@@ -43,15 +43,16 @@ March 2023 - present
 ## Volunteer Experience
 ### Ruby for Good - CASA, _Individual Contributor_
 _Ruby on Rails, PostgreSQL, ViewComponents, jQuery, Devise, Pundit_  
-**Live:** [https://casavolunteertracking.org/](https://casavolunteertracking.org/)  
-
 * Implemented UI updates to leverage JQuery Datatables for management pages to make it easier to use
 * Reviewed and improved multi-tenant permissions using Pundit to ensure security between tenants
 * Encapsulated application jobs into unit-testable plain old Ruby objects and wrote tests, adding confidence in notifications
 
 
 ### The Odin Project, _Individual Contributor_
-Stuff
+_Ruby on Rails, ViewComponents, Discord.js_  
+* Contributed many curriculum updates, including: git best practices, setting up PostgreSQL for development, and using AI while learning foundations
+* Fixed form validation bugs on the web application and update the data to include new lessons
+* Fixed a points grant bug on the community discord bot
 
 ---
 
@@ -93,62 +94,15 @@ _University of Toronto_
 
 ### Bachelor of Music in Performance (2.89/4.0 GPA)
 _University of Toronto_  
-2006 - 2010
+2006 - 2011
 * Specialization in Vocal Jazz
 
 ---
 
-## Professional Experience
-### Software Developer
-_Sierra Rails_  
-March 2023 - present | Toronto, Remote
-* Build new features using Ruby on Rails, ViewComponents, Hotwire, Bootstrap, SCSS, and Devise
-* Maintain development and production environments using VPS provders and container based systems
-* Create and manage automated test suites for features using MiniTest and RSpec
-
-### Office & Operations Manager
-_Designstor_  
-Feb 2017 - March 2023 | Toronto
-* Accounts Payable/Receivable
-  * Automated various financial reports to improve visibility for management
-  * Improved A/R receivables timeline from ~60 days to ~30 days via follow-up automation
-  * Centralized billing and project management information to reduce billing reconciliation times
-  * Set up an automated time sheet parsing to reduce billing reconciliation times
-* Taxes & Finance
-  * Prepare and action periodic tax obligations including source deductions & sales tax remittances
-* Payroll, Benefits & HR Administration for office of 10
-  * Administer and process payroll for staff on a monthly basis
-  * Track, manage and process overtime, vacation, sick days and other PTO/leave
-  * Manage employee documents and information
-  * Administer group benefits and manage changes to staff coverage
-* Business Operations & Administrative Support
-  * Manage and coordinate with property management and building operators on building systems and maintenance
-
-### Trademark Sales Manager
-_Witmart_  
-Jul 2016 - Jan 2017 | Toronto
-* With 4 direct reports, improved sales performance in a fast-paced start-up environment
-* Responsible for on-boarding and performance
-* Improved business processes in conjunction with senior managers
-* Regular training and coaching responsibilities
-
----
-
-## Volunteer Experience
-### Ruby for Good
-_Individual Contributor_  
-* Contributed various fixes and improvements to the CASA Volunteer Tracking application
-
-### The Odin Project
-_Individual Contributor_  
-* Contributed various curriculum updates, including new lessons on local development environment setup
-* Contributed web application and community tool bug fixes
-
----
-
 ## Skills
-* **Languages:** Ruby, Javascript, Typescript, HTML5, CSS3, SQL, MongoQL, Python
-* **Frameworks:** Ruby on Rails, Hotwire Stimulus & Turbo, node.js, React, React Router, Sass, Tailwind
-* **Automated Testing:** RSpec, Jest, React Testing Library
-* **Cloud Services:** Github, Google Cloud Platform, Firebase, DigitalOcean, AWS, Heroku, Sendgrid, vercel
-* **Tools:** git, VScode, Linux, Postman, postgreSQL, mongoDB, NoSQL, rbenv, ruby bundler, npm, webpack, docker, docker compose, dokku
+* **Languages:** Ruby, Javascript, Typescript, HTML5, CSS3
+* **Frameworks:** Ruby on Rails, Hotwire, React, Bootstrap, Tailwind
+* **Automated Testing:** RSpec, Cypress, Jest
+* **Deployment:** Github Actions, Google Cloud Platform, AWS, Heroku, DigitalOcean
+* **Tools:** git, neovim, docker
+
