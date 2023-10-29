@@ -8,7 +8,7 @@ tags:
   - ruby
   - rails
   - meetup
-published: true
+published: false
 ---
 
 I am very excited to write this because it's been something I've been thinking about doing since I started my professional journey with Ruby and Rails.
