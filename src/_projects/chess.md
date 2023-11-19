@@ -4,7 +4,7 @@ title: Chess
 role: Individual Contributor
 description: A Ruby implementation of Chess for 2 players.
 tech: ['Ruby', 'RSpec']
-order: 4
+order: 5
 ---
 
 The capstone project for the Ruby section of The Odin Project curriculum. The project was broadly scoped and I implemented the program without relying on any Chess specific gems or packages.  

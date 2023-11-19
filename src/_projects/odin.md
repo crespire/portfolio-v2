@@ -4,7 +4,7 @@ title: The Odin Project
 role: Volunteer Individual Contributor
 description: An open source, self-driven web development curriculum. 
 tech: ['Ruby on Rails', 'RSpec', 'ViewComponents', 'Bootstrap', 'Javascript']
-order: 3
+order: 4
 ---
 
 The Odin Project is my home base and is the open source curriculum where I learned the basics. I've been a top contributor and continue to contribute and support the project, as its community is very dear to me.  

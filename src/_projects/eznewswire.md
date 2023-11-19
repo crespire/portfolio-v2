@@ -4,10 +4,10 @@ title: EZ Newswire
 role: Individual Contributor
 description: A press release generator and publication network for small businesses to share news with the world.
 tech: ['Ruby on Rails', 'Hotwire', 'RSpec', 'Capybara', 'ViewComponents', 'Bootstrap']
-order: 1
+order: 2
 ---
 
-My current contract project; I have had an extensive impact on this application and I'm extremely proud of the work I've done. Some highlights are listed below.  
+My previous professional experience; I had an extensive impact on this application and I'm extremely proud of the work I've done. Some highlights are listed below.  
 
 Along side the technical lead, we were able to implement an architectural change that reduced the application's error rates by an order of magnitude (approximately 60% reduction week on week). Aside from reducing the error rate, the change also removed a layer of complexity to the application without much business impact.  
   

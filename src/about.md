@@ -12,8 +12,12 @@ I'm a full stack Rails developer who is driven and independent with a high aptit
 
 ---
 ## Experience
+### [Software Engineer, Fulltime &middot; Switch Growth](/projects/switch)
+**November 2023 - present**  
+Deliver production code across all areas of the application  
+
 ### [Software Developer, Fulltime &middot; Sierra Rails](/projects/eznewswire)
-**March 2023 - present**  
+**March 2023 - November 2023**  
 Delivered high quality production code across all areas of the application including: architectural changes that significantly reduced error rates (~60%); a full test suite which reduced change failure rates; development and re-integration of a critical user flow while moving across the stack in support of business and engineering goals; a new microservice to enhance application search features; and improved data consistency through new features and user workflows
 
 ### [Individual Contributor, On-call &middot; The Agency of Learning](/projects/casa)

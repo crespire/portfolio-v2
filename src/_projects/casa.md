@@ -4,7 +4,7 @@ title: CASA Volunteer Tracking
 role: Volunteer Individual Contributor
 description: A Ruby for Good project, Casa Volunteer Tracking helps administrators manage Court Appointed Special Advocates and the administration around volunteer case contacts, expenses, and court reporting.
 tech: ['Ruby on Rails', 'jQuery', 'RSpec', 'Capybara', 'ViewComponents']
-order: 2
+order: 3
 ---
 
 I was able to contribute to the project by improving the administrator and supervisor interfaces using jQuery data tables, which improved usability and provided real time filtering of data without page loads. This helped to reduce the amount of clicks that a supervisor had to make in order to access the data they were looking for. 

@@ -2,9 +2,10 @@
 layout: page
 title: Railsbook
 role: Individual Contributor
+hidden: true
 description: A Facebook clone using full stack Rails 7 and Hotwire
 tech: ['Ruby on Rails', 'Hotwire', 'Sass']
-order: 6
+order: 7
 ---
 
 Railsbook was the capstone to the Rails course in The Odin Project's curriculum and was the first big application I wrote using the framework. There were many triumphs including actively developing a custom CSS for the application using the BEM methodology, diving in to figuring out many staple Rails ecosystem gems like Devise, Omniauth and Hotwire/Turbo/Stimulus.  

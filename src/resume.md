@@ -16,8 +16,12 @@ Self-taught and tenacious, I'm a mid-level fullstack developer looking for an op
 ---
 
 ## Work Experience
+### Switch Growth, Software Engineer
+November 2023 - present  
+* Build new features using Ruby on Rails, PostgreSQL, ViewComponents, Hotwire, Devise, Tailwind, Rspec and Capybara
+
 ### Sierra Rails, _Software Developer_
-March 2023 - present  
+March 2023 - November 2023  
 * Executed architectural changes with the tech lead, significantly reducing error rates (approximately 60%)
 * Built a comprehensive RSpec suite, achieving ~92% code coverage
 * Led development of a new checkout flow improving the app across the stack to support business goals, open the architecture for additional payment processors, and enable more checkout and payment data capture for analytics

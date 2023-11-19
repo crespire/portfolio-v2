@@ -4,7 +4,7 @@ title: 'Buy & Sell'
 role: Individual Contributor
 description: A toy marketplace application implemented with a React frontend and Rails API
 tech: ['React', 'Typescript', 'Ruby on Rails', 'TailwindCSS', 'Cypress', 'RSpec', 'ReactQuery']
-order: 5
+order: 6
 ---
 
 This project was the capstone for the full Odin Project course which culminated in a Typescrit React powered frontend with ReactQuery interfacing with a Rails 7 API.  
