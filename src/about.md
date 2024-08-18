@@ -8,13 +8,15 @@ permalink: /
 # &#128075; Hi, I'm Simmon Li!
 <small>(pronounced Simon)</small>
 <br><br>
-I'm a full stack Rails developer who is driven and independent with a high aptitude for learning. I strive for excellence while building software. I'm a great communicator around technical topics and love teaching and talking about tech.
+I'm a full stack Rails developer who is driven and independent with a high aptitude for learning. I strive for excellence while building software, and try to stay humble. I'm a great communicator around technical topics and love teaching and talking about tech.
+
+I'm one of the co-hosts for [Toronto Ruby](https://toronto-ruby.com/). If you're local, we'd love to see you!
 
 ---
 ## Experience
 ### [Software Engineer, Fulltime &middot; Switch Growth](/projects/switch)
 **November 2023 - present**  
-Deliver production code across all areas of the application  
+Develop and deliver new features and enhancements while supporting client onboarding, integration, and ongoing needs. This includes core system refactors to boost system reliability, enhance performance and improve client outcomes through enhanced capabilities and new data insights.  
 
 ### [Software Developer, Fulltime &middot; Sierra Rails](/projects/eznewswire)
 **March 2023 - November 2023**  

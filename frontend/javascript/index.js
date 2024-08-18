@@ -18,3 +18,5 @@ Object.entries(controllers).forEach(([filename, controller]) => {
     Stimulus.register(identifier, controller.default)
   }
 })
+
+console.log("Thanks for checking me out! Find me at https://github.com/crespire")
