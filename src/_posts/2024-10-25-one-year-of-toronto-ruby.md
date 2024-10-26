@@ -7,6 +7,8 @@ category: blog
 tags:
   - community
   - meetup
+  - ruby
+  - rails
 published: true
 ---
 
