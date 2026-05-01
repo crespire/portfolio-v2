@@ -16,9 +16,20 @@ Self-taught and tenacious, I'm a mid-level fullstack developer looking for an op
 ---
 
 ## Work Experience
-### Switch Growth, Software Engineer
-November 2023 - present  
-* Build new features using Ruby on Rails, PostgreSQL, Clickhouse, ViewComponents, Hotwire, Devise, Tailwind, Rspec and Capybara
+### Switch Growth, *Senior Software Engineer*
+Febuary 2026 - *present*
+* Architected batch data processing pipeline optimizations reducing cloud infrastructure costs by 48%, delivering significant annual infrastructure savings across a multi-tenant SaaS platform build on Ruby on Rails, PostgreSQL, ClickHouse and Hotwire.
+* Eliminated tail latency in core job execution engine through data model decoupling, reducing worst-case runtime from 21 hours to 5 minutes.
+* Implemented resumable job processing pattern across multiple data integrations, reducing median job duration by 59-66% and p99 latency by up to 79%.
+* Achieved 40% more job throughput with 36-50% fewer compute hours through combined architectural improvements to the ETL pipeline and data processing architecture.
+
+Software Engineer, November 2023 - January 2026  
+* Developed and maintained API integrations, working across the stack to expand platform capabilities and streamline external data flows.
+* Guided clients through onboarding and technical challenges, consulting on roadblocks and executing technical milestones to drive client success.
+* Increased test coverage from ~75% to ~80% using RSpec and Capybara, strengthening stability and preventing regressions. Also migrated supporting infrastructure to improve reliability and speed.
+* Replaced legacy React and Javascript with Turbo and Stimulus, simplifying frontend stack and improving maintainability.
+* Implemented onboarding features to improve data integrity, and improving the system architecture with data schemas.
+
 
 ### Sierra Rails, _Software Developer_
 March 2023 - November 2023  
