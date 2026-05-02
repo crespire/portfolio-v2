@@ -48,13 +48,6 @@ March 2023 - November 2023
 * Crafted data migrations to ensure data integrity and consistency
 * Maintained and updated documentation for the application
 
-### Designstor, _Office & Operations Manager_
-* Business operations, including accounts payable/receivable, taxes & finance
-* Built automated reporting tooling in Ruby and expanded tool to an internal report generation tool to facilitate billing and client audit requests
-* Alongside internal effort tracking automation, implemented financial reporting automation which helped to improve operational visibility for the executive team
-* Automated various project management workflow tasks to improve time-to-invoice
-* Various tasks including payroll, benefits & HR administration
-
 ## Volunteer Experience
 ### Ruby for Good - CASA, _Individual Contributor_
 _Ruby on Rails, PostgreSQL, ViewComponents, jQuery, Devise, Pundit_  
