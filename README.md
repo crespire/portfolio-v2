@@ -11,7 +11,7 @@ Source for [crespire.dev](https://crespire.dev): Simmon Li's portfolio, resume, 
 
 ## Prerequisites
 
-`.tool-versions` pins the runtimes: Ruby 4.0.9 and Node 20. With [asdf](https://asdf-vm.com/), run `asdf install` in the repository root. CI reads the Ruby version from `.ruby-version`, so keep the two files in step.
+`.tool-versions` pins the runtimes: Ruby 4.0.9 and Node 26 (the current LTS). With [asdf](https://asdf-vm.com/), run `asdf install` in the repository root. CI reads Node from `.tool-versions` and Ruby from `.ruby-version`, so keep the Ruby version in both files in step.
 
 ## Local development
 
