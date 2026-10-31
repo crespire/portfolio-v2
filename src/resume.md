@@ -27,7 +27,7 @@ February 2026 - *present*
 * Routinely diagnose and tune slow queries across PostgreSQL, ClickHouse and BigQuery, reading query plans, adding missing indexes and removing N+1s; one fix turned a 200-second sequential scan into an index scan.
 * Shipped ad-platform and CRM integrations end to end, including Google Data Manager destinations (tag conversions and Floodlights) with a migration dashboard, a Salesforce External Client App for packaged-app auth, and HubSpot associated-object traversal.
 * Migrated every legacy data source onto typed schemas without changing delivery outcomes, proven by a read-parity suite that replays anonymized production samples through both paths.
-* Partnered with enterprise clients' marketing and engineering teams to resolve attribution and delivery issues wherever they started, in our pipeline or theirs, raising one client's Meta event match quality from 6.9 to 7.5.
+* Partnered with enterprise clients' marketing and engineering teams to resolve attribution and delivery issues wherever they started, in our pipeline or theirs, improving performance across their in-scope ad platforms.
 
 Software Engineer, November 2023 - January 2026  
 * Built conversion API integrations for Google (Enhanced Conversions for Leads, Web and Offline), Meta, Reddit, Bing, Pinterest and TikTok, and rolled Google Enhanced Conversions out to many clients across the book with Google Tag Manager templates and documentation.
