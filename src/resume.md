@@ -34,7 +34,7 @@ Software Engineer, November 2023 - January 2026
 * Designed the per-record delivery architecture in Rails and PostgreSQL that moved destinations from batch ETL to tracked, retryable delivery, starting with email CSV and call conversions and later Meta CAPI.
 * Built Boost, a real-time TypeScript pixel that recovers lost click IDs and hashed identifiers for conversions, from the front-end tag through server-side matching.
 * Migrated authentication from WebAuthn to Devise with SMS two-factor, including invite and password-reset flows and a zero-downtime move of sensitive attributes to encrypted storage.
-* Added per-job, per-account Sidekiq metrics in Prometheus, making compute cost attributable to clients and grounding the 2026 efficiency work.
+* Added per-job, per-account Sidekiq metrics in Prometheus, making compute cost attributable to clients and jobs, enabling deeper profiling and performance insights.
 * Replaced legacy React and JavaScript with Turbo and Stimulus, simplifying the front-end stack.
 
 
