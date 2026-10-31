@@ -24,7 +24,7 @@ February 2026 - *present*
 * Built Switch Metrics, a ClickHouse time-series framework with hourly and daily rollups and anomaly detection. It replaced one-off reporting tables and now backs identity-recovery, account health and rule-routing metrics.
 * Retired a recurring class of data incidents by unifying three drifted BigQuery export paths onto one engine that conforms every load to the live schema.
 * Fixed Salesforce data-correctness bugs that cost clients conversions: rewrote field-history replay as a whole-object rollback, gave each pipeline its own read cursor (one daily pipeline was receiving 4.8% of its hourly twin's conversions), and bounded day reads so large days no longer exhaust workers.
-* Routinely diagnose and tune slow queries across PostgreSQL, ClickHouse and BigQuery, reading query plans, adding missing indexes and removing N+1s; one fix turned a 200-second sequential scan into an index scan.
+* Diagnosed and tuned slow queries across PostgreSQL, ClickHouse and BigQuery as routine work, reading query plans, adding missing indexes and removing N+1s; one fix turned a 200-second sequential scan into an index scan.
 * Shipped ad-platform and CRM integrations end to end, including Google Data Manager destinations (tag conversions and Floodlights) with a migration dashboard, a Salesforce External Client App for packaged-app auth, and HubSpot associated-object traversal.
 * Migrated every legacy data source onto typed schemas without changing delivery outcomes, proven by a read-parity suite that replays anonymized production samples through both paths.
 * Partnered with enterprise clients' marketing and engineering teams to resolve attribution and delivery issues wherever they started, in our pipeline or theirs, improving performance across their in-scope ad platforms.
@@ -46,7 +46,7 @@ March 2023 - November 2023
 * Moved search from PostgreSQL full-text search (`pg_search`) to Meilisearch, including the deployment and CI changes.
 * Moved the front-end build from importmaps to esbuild for wider browser support, and moved shared UI into tested ViewComponents.
 * Re-implemented the OpenAI-powered press release generation with the tech lead, moving to GPT-3.5 Turbo and adding streaming output.
-* Built organization/brand management for agency users with many clients, and an image upload and reordering flow in Turbo and Stimulus, vendoring an open-source JavaScript package to add the features it needed.
+* Delivered organization/brand management for agency users with many clients, and an image upload and reordering flow in Turbo and Stimulus, vendoring an open-source JavaScript package to add the features it needed.
 * Delivered features across the stack from user stories and Figma mocks, with the data migrations and documentation to match.
 
 ## Volunteer Experience
