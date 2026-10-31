@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Simmon Li
-tagline: Your next mid-level Ruby developer!
+tagline: Senior full-stack engineer, Ruby and Rails
 email: hello@crespire.dev
 description: >-
-  Portfolio for Simmon Li, an effective and independent mid-level Ruby and Rails developer.
+  Portfolio for Simmon Li, a senior full-stack engineer who builds and runs data pipelines, integrations and product features in Ruby and Rails.
