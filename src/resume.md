@@ -9,7 +9,7 @@ title: "Simmon Li's Resume"
 * [![Github](https://img.shields.io/badge/-crespire-000?style=flat-square&logo=github&logoColor=azure&color=181717)](https://github.com/crespire)
 * [![LinkedIn](https://img.shields.io/badge/-Simmon_Li-000?style=flat-square&logo=linkedin&logoColor=azure&color=0A66C2)](https://www.linkedin.com/in/simmonli/)
 
-Self-taught and tenacious, I'm a mid-level fullstack developer looking for an opportunity to grow with a team and continue to build on my skills. I'm fluent in Ruby/Rails, Hotwire, and Javascript. I've tinkered with Typescript, React and Go in my spare time and always open to learning new things.  
+A pragmatic full-stack engineer who cares as much about how the system performs as how the product feels. I build, run and maintain everything from data pipelines and third-party integrations to the UI, and I own features and client problems end to end. Ruby and Rails are home base, I'm comfortable in JavaScript and TypeScript, and I've built side projects in React and Go.  
 &nbsp;  
 <span class="no-print">I'd love to chat about what I can bring to the table, so <a href="#contact-me" data-action="highlight#animate">contact me!</a>.</span>
 
@@ -17,38 +17,44 @@ Self-taught and tenacious, I'm a mid-level fullstack developer looking for an op
 
 ## Work Experience
 ### Switch Growth, *Senior Software Engineer*
-Febuary 2026 - *present*
-* Architected batch data processing pipeline optimizations reducing cloud infrastructure costs by 48%, delivering significant annual infrastructure savings across a multi-tenant SaaS platform build on Ruby on Rails, PostgreSQL, ClickHouse and Hotwire.
-* Eliminated tail latency in core job execution engine through data model decoupling, reducing worst-case runtime from 21 hours to 5 minutes.
-* Implemented resumable job processing pattern across multiple data integrations, reducing median job duration by 59-66% and p99 latency by up to 79%.
-* Achieved 40% more job throughput with 36-50% fewer compute hours through combined architectural improvements to the ETL pipeline and data processing architecture.
+February 2026 - *present*
+* Led a rework of the Rails, Sidekiq and PostgreSQL batch data pipeline (BigQuery Avro export, decoupled delivery records, resumable jobs) that cut GCP spend per conversion by ~60%, letting the platform absorb 3.2x conversion volume on flat infrastructure spend.
+* Replaced paged BigQuery ingestion with parallel Avro exports fanned out across Kubernetes worker pods, cutting its worker time by 70% and hour-plus jobs from ~190 a day to under 1, and made Salesforce processing resumable with iterable Sidekiq jobs, cutting p99 job time by 84%.
+* Reworked the Avro export orchestrator so reader pods split exports into byte ranges in parallel, cutting its worker time a further 19% at flat volume and removing a bookkeeping step that had needed repeated hotfixes.
+* Built Switch Metrics, a ClickHouse time-series framework with hourly and daily rollups and anomaly detection. It replaced one-off reporting tables and now backs identity-recovery, account health and rule-routing metrics.
+* Retired a recurring class of data incidents by unifying three drifted BigQuery export paths onto one engine that conforms every load to the live schema.
+* Fixed Salesforce data-correctness bugs that cost clients conversions: rewrote field-history replay as a whole-object rollback, gave each pipeline its own read cursor (one daily pipeline was receiving 4.8% of its hourly twin's conversions), and bounded day reads so large days no longer exhaust workers.
+* Turned slow PostgreSQL queries into index scans (some had run sequential scans of 200 seconds or more) and removed N+1 queries.
+* Contributed to Switch Predict, the machine learning app, with a generic GA4 feature extractor and automated GCP and Vertex AI onboarding.
+* Shipped ad-platform and CRM integrations end to end, including Google Data Manager destinations (tag conversions and Floodlights) with a migration dashboard, a Salesforce External Client App for packaged-app auth, and HubSpot associated-object traversal.
+* Migrated every legacy data source onto typed schemas without changing delivery outcomes, proven by a read-parity suite that replays anonymized production samples through both paths.
+* Partnered with enterprise clients' marketing and engineering teams to resolve attribution and delivery issues wherever they started, in our pipeline or theirs, raising one client's Meta event match quality from 6.9 to 7.5.
 
 Software Engineer, November 2023 - January 2026  
-* Developed and maintained API integrations, working across the stack to expand platform capabilities and streamline external data flows.
-* Guided clients through onboarding and technical challenges, consulting on roadblocks and executing technical milestones to drive client success.
-* Increased test coverage from ~75% to ~80% using RSpec and Capybara, strengthening stability and preventing regressions. Also migrated supporting infrastructure to improve reliability and speed.
-* Replaced legacy React and Javascript with Turbo and Stimulus, simplifying frontend stack and improving maintainability.
-* Implemented onboarding features to improve data integrity, and improving the system architecture with data schemas.
+* Built conversion API integrations for Google (Enhanced Conversions for Leads, Web and Offline), Meta, Reddit, Bing, Pinterest and TikTok, and rolled Google Enhanced Conversions out to many clients across the book with Google Tag Manager templates and documentation.
+* Designed the per-record delivery architecture in Rails and PostgreSQL that moved destinations from batch ETL to tracked, retryable delivery, starting with email CSV and call conversions and later Meta CAPI.
+* Built Boost, a real-time TypeScript pixel that recovers lost click IDs and hashed identifiers for conversions, from the front-end tag through server-side matching.
+* Migrated authentication from WebAuthn to Devise with SMS two-factor, including invite and password-reset flows and a zero-downtime move of sensitive attributes to encrypted storage.
+* Added per-job, per-account Sidekiq metrics in Prometheus, making compute cost attributable to clients and grounding the 2026 efficiency work.
+* Replaced legacy React and JavaScript with Turbo and Stimulus, simplifying the front-end stack.
 
 
 ### Sierra Rails, _Software Developer_
 March 2023 - November 2023  
-* Executed architectural changes with the tech lead, significantly reducing error rates (approximately 60%)
-* Built a comprehensive RSpec suite, achieving ~92% code coverage
-* Led development of a new checkout flow improving the app across the stack to support business goals, open the architecture for additional payment processors, and enable more checkout and payment data capture for analytics
-* Re-engineered search to leverage a microservice and set up deployment environments to support search service
-* Improved application reliability by switching asset bundling to support more browsers, improving user experience and reducing error rates due to data inconsistency
-* Built new features using Ruby on Rails, PostgreSQL, ViewComponents, Hotwire, Devise, Bootstrap, Rspec and Capybara
-* Delivered numerous new features from user stories and Figma design mocks while working across the stack as needed
-* Implemented new organization/brand workflow to manage sets of press releases, benefiting agency users with multiple clients and/or brands
-* Created an image upload feature and workflow using Turbo/Stimulus, enabling users to upload and (re)order accompanying images with their press release without full page loads, improving customer conversions
-* Spearheaded development of a new user onboarding experience, improving data reliability
-* Worked in concert with the tech lead to re-implement our AI generation approach to support future growth and flexibility
-* Vendored an open source Javascript package to support image uploading with new required functionality
-* Crafted data migrations to ensure data integrity and consistency
-* Maintained and updated documentation for the application
+* Reduced error rates by ~60% by re-architecting authentication and adding an onboarding flow that enforces data consistency, working closely with the tech lead.
+* Raised test coverage from ~63% to ~91% with RSpec and Capybara request, system, model and ViewComponent specs.
+* Built the cart and checkout for publisher distribution bundles on a payment-processor abstraction, with Stripe as the first processor, and captured checkout and payment data for analytics.
+* Moved search from PostgreSQL full-text search (`pg_search`) to Meilisearch, including the deployment and CI changes.
+* Moved the front-end build from importmaps to esbuild for wider browser support, and moved shared UI into tested ViewComponents.
+* Re-implemented the OpenAI-powered press release generation with the tech lead, moving to GPT-3.5 Turbo and adding streaming output.
+* Built organization/brand management for agency users with many clients, and an image upload and reordering flow in Turbo and Stimulus, vendoring an open-source JavaScript package to add the features it needed.
+* Delivered features across the stack from user stories and Figma mocks, with the data migrations and documentation to match.
 
 ## Volunteer Experience
+### Toronto Ruby, _Co-Host_
+November 2023 - *present*
+* Organize and grow a monthly Ruby community event, increasing average attendance from ~15 to ~55 by securing speakers, sponsors, and venues.
+
 ### Ruby for Good - CASA, _Individual Contributor_
 _Ruby on Rails, PostgreSQL, ViewComponents, jQuery, Devise, Pundit_  
 * Implemented UI updates to leverage JQuery Datatables for management pages to make it easier to use
@@ -108,9 +114,9 @@ _University of Toronto_
 ---
 
 ## Skills
-* **Languages:** Ruby, Javascript, Typescript, HTML5, CSS3
+* **Languages:** Ruby, JavaScript, TypeScript, SQL, HTML5, CSS3
 * **Frameworks:** Ruby on Rails, Hotwire, React, Bootstrap, Tailwind
-* **Automated Testing:** RSpec, Cypress, Jest
-* **Deployment:** Github Actions, Google Cloud Platform, AWS, Heroku, DigitalOcean
+* **Data:** PostgreSQL, ClickHouse, BigQuery, Sidekiq, Redis
+* **Automated Testing:** RSpec, Capybara, Cypress, Jest
+* **Infrastructure:** Google Cloud Platform, Kubernetes, Prometheus, GitHub Actions, AWS, Heroku, DigitalOcean
 * **Tools:** git, neovim, docker
-
